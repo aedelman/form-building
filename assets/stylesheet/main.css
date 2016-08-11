@@ -1,0 +1,342 @@
+/*
+  ========================================
+  Start CSS Reset
+  ========================================
+*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+  ========================================
+  Custom Styles 
+  ========================================
+*/
+body {
+  background: #FFFFFF;
+  color: #333;
+  font: 300 16px/22px "Nunito", sans-serif;
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+*, 
+*:before, 
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.col-1-3 {
+  width: 33.33%;
+}
+.col-2-3 {
+  width: 66.66%;
+}
+.col-1-3, 
+.col-2-3 {
+  display: inline-block;
+  vertical-align: top;
+}
+.grid, 
+.col-1-3, 
+.col-2-3 {
+  padding-left: 25px; 
+  padding-right: 15px;
+  padding-bottom: 25px;
+}
+.container, 
+.grid {
+  margin: 0 auto;
+  width: 800px;
+}
+.container {
+   padding-top: 30px;
+     
+}
+.border {
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.group:before, 
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+h1, h3, h4, p {
+  margin-bottom: 20px;
+}
+h1 {
+  font-size: 36px; 
+  line-height: 40px;
+}
+h2 {
+  font-size: 30px; 
+  line-height: 45px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+h3 {
+  font-size: 20px;
+}
+h4 {
+  font-size: 18px; 
+}
+
+/*
+  ========================================
+  Buttons
+  ========================================
+*/
+.btn  {
+  border-radius: 2px;
+  color: #fff;
+  border: none;
+  font-size: 13px;
+  height: 34px; 
+  background: #45CAE6;
+  cursor: pointer; 
+  display: inline-block;
+  font-weight: 300; 
+  letter-spacing: .5px; 
+  margin: 0 0 10px 0;
+  padding: 0 15px;
+  text-transform: uppercase;
+}
+/*
+  ========================================
+  Links
+  ========================================
+*/
+a {
+  color: #a5a5a5;
+  text-decoration: none;
+}
+.primary-nav a {
+  color: #333;
+}
+.marketing-points a {
+  text-decoration: underline;
+  color: #666;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+small a {
+  color: #45cae6;
+}
+
+/*
+  ========================================
+  Primary Header & Header Navigation
+  ========================================
+*/
+.logo {
+  float: left;
+  margin-top: 40px;
+}
+.primary-nav li:first-child {
+  font-weight: 700;
+  border-right: solid 1px #D3D3D3;
+  padding: 0 15px 0 0;
+
+}
+.primary-nav {
+  margin-top: 40px;
+  text-align: right;
+  padding-top: 20px;
+  padding-right: 5px;
+  margin-bottom: 10px;
+}
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+.nav li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.nav li:last-child {
+  margin-right: 0;
+}
+/*
+  ========================================
+  Footer & Footer Navigation 
+  ========================================
+*/
+.primary-footer {
+  color: #a5a5a5;
+  text-align: center;
+  font-size: 14px;
+}
+.small-footer li, .large-footer li {
+  border-right: solid 1px #D3D3D3;
+  padding-right: 20px;
+}
+
+.small-footer li:last-child, .large-footer li:last-child {
+  border-right: none;
+
+}
+
+.small-footer {
+  font-size: 12px;
+  margin-bottom: 100px; 
+}
+.security-logos {
+  margin: 25px;
+  position: relative;
+}
+.norton-logo {
+  padding-right: 15px;
+}
+.trusted-logo {
+  padding-left: 15px;
+  vertical-align: center;
+  position: relative;
+  bottom: 6px;
+}
+
+/*
+  ========================================
+  Sign up
+  ========================================
+*/
+input,
+select,
+textarea {
+  font: 300 16px/22px "Nunito", sans-serif;
+}
+.sign-up label {
+  cursor: pointer;
+  font-size: 14.5px;
+}
+.sign-up input,
+.sign-up select,
+.sign-up textarea {
+  border: 1px solid #c6c9cc;
+  border-radius: 2px;
+  display: block;
+  margin: 15px 0 27px 0;
+  padding: 5px 8px;
+  width: 75%;
+
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + label span {
+  display: inline-block;
+  width: 19px; 
+  height: 19px; 
+  vertical-align: top;
+  cursor: pointer; 
+  background: url("assets/images/checkbox_unchecked.png") left top no-repeat; 
+}
+input[type="checkbox"]:hover + label span {
+  background: url("assets/images/checkbox_hover.png") left top no-repeat; 
+}
+input[type="checkbox"]:checked + label span {
+  background: url("assets/images/checkbox_checked.png") left top no-repeat; 
+}
+.checkbox-text {
+  display: inline-block;
+  padding-left:  12px;
+  font-size: 14.5px; 
+}
+small {
+  font-size: 12px; 
+  display: block;
+  color: #7D7F80;
+}
+
+/*
+  ========================================
+  Right Column
+  ========================================
+*/
+
+.right-column{
+  border-left: 1px solid #D3D3D3;
+}
+.right-box {
+  background: #F5F5F5;
+  margin-left: 20px;
+  margin-right: -5px; 
+  margin-top: 20px;
+  padding: 20px;
+  height: 590px;
+  color: #666;
+}
+.marketing-points {
+  font-size: 12px;
+  list-style-type: disc;
+  margin-left: 15px;
+}
