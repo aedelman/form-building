@@ -298,13 +298,13 @@ input[type="checkbox"] + label span {
   height: 19px; 
   vertical-align: top;
   cursor: pointer; 
-  background: url("assets/images/checkbox_unchecked.png") left top no-repeat; 
+  background: url("../images/checkbox_unchecked.png") left top no-repeat; 
 }
 input[type="checkbox"]:hover + label span {
-  background: url("assets/images/checkbox_hover.png") left top no-repeat; 
+  background: url("../images/checkbox_hover.png") left top no-repeat; 
 }
 input[type="checkbox"]:checked + label span {
-  background: url("assets/images/checkbox_checked.png") left top no-repeat; 
+  background: url("../images/checkbox_checked.png") left top no-repeat; 
 }
 .checkbox-text {
   display: inline-block;
